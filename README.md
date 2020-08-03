@@ -1,12 +1,54 @@
 # DS164_A2M
+##Contents of this file
+* Problem Statement
+* Problem Description
+* Tech stack
+* Requirements
+* Use case diagram
+* System implementation details
+        - **Admin**
+                1. Creation of Geo-fenced area
+                2. Monitor Attendance (Date wise)
+                3. Monitor Beat Activity 
+                4. Verify Officer 
+                5. View Zones
+                6. View Activity on Map
+                7. Generate QR code
+                8. News broadcasting
+        - **Users (Officers)**
+                1. Geo-fencing Module
+                        1.1. Alert zone
+                2. Staff Management Module
+                        2.1. New user Registration
+                        2.2. Mark my attendance
+                        2.3. Resources allocation
+                        2.4. Notification Activity
+                        2.5. Profile Page
+                        2.6. Your Tracker
+                3. Diary Management 
+                        3.1. Launch complaint
+                        3.2. Mark Checkpoint
+                4. Report generation & Miscellaneous
+                        4.1. News Broadcasting
+                        4.2. Report genration 
+                            - Complaint Report
+                            - Attendance Report
+                        4.3. Multilingual
+                        4.4. Chatbot
+                        4.5. Andaman and Nicobar Island
+                5. Offilne Mode 
+                6. (SOS Button) Emergency Assistance
+
+* External Dependencies
+
 ## Problem Statement: Development of App to capture the field patrolling track of frontline staff in their forest beat jurisdiction.
-Problem Statement Description: Develop an app to capture information related to field patrolling officers for forest and wildlife assets patrolling personnel posted in the field.The following information can be recorded - 
-1. location for their safety,
-2. asset, location, and other information about the asset like weight, etc depending on the asset.
+Problem Statement Description: Develop an app to capture information related to **field patrolling officers** for forest and wildlife assets for patrolling personnel posted in the field.The following information can be recorded - 
+1. location for their **safety**,
+2. **asset**, location, and other information about the asset like weight, etc depending on the asset.
 
-*A major requirement of this app will be offline abilities. It should work without internet access. This can be done by having sync functionality and subsequent edits should be recorded in the app and synced later on once the user is Online.*
+A major requirement of this app will be **offline abilities**. It should work without internet access. This can be done by having **sync functionality** and subsequent **edits** should be recorded in the app and synced later on once the user is Online.
 
-# Teck Stack
+# Tech Stack
 ## Web and Mobile Application:
 ### Front End :
 JAVA, XML, Android, HTML5, CSS , Bootstrap, Javascript, Laravel
@@ -23,38 +65,15 @@ Firebase Database, SQLite,  SharedPreference.
 - sourceCompatibility JavaVersion.VERSION_1_8
 - Firebase version 15.+
 
-## Other Requirements
+## External Dependencies
 - [PlotProjects] (https://www.plotprojects.com/)for Geo-fencing
 - [Hypertrack] (https://www.hypertrack.com/)for tracking purposes
 
 # Main Objective
 ![](Images/image.PNG)
-### 1. Geo-fencing Module
-        1. Alert zone
-### 2. Staff Management Module
-        1. Mark my attendance
-        2. Resources allocation
-        3. Notification Activity
-        4. Profile Page
-        5. Your Tracker
-### 3. Dairy Management 
-        1. Launch complaint
-        2. Mark Checkpoint
-### 4. Report generation & Miscellaneous
-        1. News Broadcasting
-        2. Report genration 
-            - Complaint Report
-            - Attendance Report
-        3. Multilingual
-        4. Chatbot
-        5. Andaman and Nicobar Island
-### 5. Offilne Mode 
-### 6. (SOS Button) Emergency Assistance
 
-## Registration:
-- The Forest officer has to authenticate by scanning the QR code of the Aadhar card which will enhance the authentication feature of the app. The required information is fetched automatically which reduces the burden of manually entering each and every field.
-- The other fields such as information regarding division, ranges and beats has to be entered manually.
-- The registration process is completed only after the admin or other higher level officer verify the registration.
+
+
 
 ## 1. Geo-fencing Module
 ![](Images/Geo.PNG)
@@ -79,12 +98,17 @@ Firebase Database, SQLite,  SharedPreference.
 3. Beat guards at beat level.
 4. Forest guard.
 
-### 2.1. Attendance marker
+### 2.1 Registration:
+- The Forest officer has to authenticate by scanning the QR code of the Aadhar card which will enhance the authentication feature of the app. The required information is fetched automatically which reduces the burden of manually entering each and every field.
+- The other fields such as information regarding division, ranges and beats has to be entered manually.
+- The registration process is completed only after the admin or other higher level officer verify the registration.
+
+### 2.2 Attendance marker
 - We have implemented a two-way authentication process to avoid forgery. To mark the attendance follow the procedure :
 1. The officer has to click a picture for face authentication 
 2. Then the user will be navigated to the QR code section, once the QR code is scanned, the location of the user is also stored to avoid illegitimate attendance marking.
 
-### 2.2. Resource Allocation(Department Assets, Forests Resources): 
+### 2.3 Resource Allocation(Department Assets, Forests Resources): 
 
 ![Res](Images/allocate.PNG)
 
@@ -94,7 +118,7 @@ Firebase Database, SQLite,  SharedPreference.
 - The beat guard has to return the assigned resource to their superior officer through this application.
 
 
-### 2.3. Notification Activity:
+### 2.4 Notification Activity:
 
 
 ![Profile](Images/notif.jpeg)
@@ -106,7 +130,7 @@ The user is mainly notified about :
 - Case reported : When an officer reports a case.
 - Checkpoint marked : When the officer travels from one checkpoint to another.
 
-### 2.4. Profile Page:
+### 2.5 Profile Page:
 
 ![Profile](Images/profile.PNG)
 
@@ -117,7 +141,7 @@ The officer can view and update his own profile. It consists of user information
 
 Also, he can view his attendance %, experience and reviews.
 
-### 2.5. Your Tracker :
+### 2.6 Your Tracker :
 
 ![Your tracker](Images/Track.jpeg)
 
@@ -186,13 +210,7 @@ For filling a case :
 
 
 # Admin Dashboard 
-1. Monitor Attendance (Date wise)
-2. Monitor Beat Activity 
-3. Verify Ofiicer 
-4. View Zones
-5. View Activity on Map
-6. Generate OR code
-7. News broadcasting
+
 
 ### 1. Monitor Attendance (Date wise)
 - The admin has the provision to view the attendance of the officers on a specific date.
