@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdetail2">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#2196F3" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/layoutInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_white"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="User Post1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:hint="User Post1"
+                android:id="@+id/usrpst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/desc1"
+                android:hint="Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/time1"
+                android:hint="Time"
+                android:inputType="datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="User Post1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:hint="User Post1"
+                android:id="@+id/usrpst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/desc2"
+                android:hint="Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/time2"
+                android:hint="Time"
+                android:inputType="datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="User Post1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:hint="User Post3"
+                android:id="@+id/usrpst3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/desc3"
+                android:hint="Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/time3"
+                android:hint="Time"
+                android:inputType="datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/rec_gradient"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/login"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- <ImageView
+             android:id="@+id/imageVIew"
+             android:layout_marginTop="15dp"
+             android:layout_marginBottom="5dp"
+             android:layout_centerHorizontal="true"
+             android:src="@mipmap/ic_launcher"
+             android:background="@drawable/background_white"
+             android:padding="5dp"
+             android:layout_width="70dp"
+             android:layout_height="70dp" />-->
+
+    </RelativeLayout>
+</ScrollView>
+
+
+</FrameLayout>

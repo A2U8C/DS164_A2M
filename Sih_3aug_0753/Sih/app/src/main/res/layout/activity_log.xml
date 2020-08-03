@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg"
+        android:id="@+id/header"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Time of \nAssignment"
+            android:textSize="15sp"
+
+            android:layout_margin="5dp"
+
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:text="Assigned By"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:text="Assigned To"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:text="Completed"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/logtab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
