@@ -116,7 +116,6 @@ Firebase Database, SQLite,  SharedPreference.
 
 ## 1. Geo-fencing Module
 ![](Images/Geo.PNG)
-- Based on the interpretation of IRS satellite data of the period Apr 2017 to Mar 2018, the Forest Cover in the UT is 6,742.78 sq km which is 81.74 % of the UT's geographical area.
 - The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
 - A notification is sent when the patrolling officer moves from one beat to another. 
 
@@ -133,50 +132,50 @@ Firebase Database, SQLite,  SharedPreference.
 ![Hierarchy](Images/tree.PNG)
 - The Forest department hierarchy is divided into various sub-levels which consists of :
         1. DCF/DFO (Deputy Conservator of Forests or Divisional Forest Officer) at Division Level
-        2. RFO( Range forest officer) at Rangers level
-        3. Beat guards at beat level.
-        4. Forest guard.
+        2. RFO (Range forest officer) at Range level
+        3. Beat guards at beat level
+        4. Forest guard
 
 ### 2.1 Registration:
-- The Forest officer has to authenticate by scanning the QR code of the Aadhar card which will enhance the authentication feature of the app. The required information is fetched automatically which reduces the burden of manually entering each and every field.
+- The Forest officer has to register by scanning the **QR code of the Aadhar card** which will enhance the authentication feature of the app. 
+- The required **information is fetched** automatically which reduces the burden of manually entering each and every field.
 - The other fields such as information regarding division, ranges and beats has to be entered manually.
-- The registration process is completed only after the admin or other higher level officer verify the registration.
+- The registration process is completed only after the admin or other higher level officer **verifies** the registration.
 
 ### 2.2 Attendance marker
-- We have implemented a two-way authentication process to avoid forgery. To mark the attendance follow the procedure :
+- We have implemented a two-way authentication process to avoid forgery. For attendance marking, the officer has to follow two-step process:
 1. The officer has to click a picture for face authentication 
 2. Then the user will be navigated to the QR code section, once the QR code is scanned, the location of the user is also stored to avoid illegitimate attendance marking.
 
-### 2.3 Resource Allocation(Department Assets, Forests Resources): 
+### 2.3 Resource Allocation (Department Assets): 
 
 ![Res](Images/allocate.PNG)
 
-- This feature enables the higher officer to allocate and deallocate resources to the lower officers. There is a feature of logs which is automatically updated when a resource is allocated or surrendered.
-- DCF/DFO and RFO have the authority to allocate and deallocate the resources to the beat guards.
-- The logs can be viewed by the higher officer, which is represented in the yabular format (Assigned by, Assigned To and Date and Time). 
-- The beat guard has to return the assigned resource to their superior officer through this application.
+- This feature enables the higher officer to **allocate and deallocate resources** to the lower officers. There is a feature of maintaining **logs** which is automatically updated when a resource is allocated or surrendered.
+- The higher level officers can allocate and deallocate resources to the lower officers.
+- The logs can be viewed by the higher officer, which is represented in the tabular format (Assigned by, Assigned To and Date and Time). 
+- The beat guard can surrender the assigned resources after completing their task.
 
 
 ### 2.4 Notification Activity:
-
 
 ![Profile](Images/notif.jpeg)
 
 The user is mainly notified about :
 
-- Attendance verification :  When attendance is marked.
-- Attendance misbehaviour :  Whenanyone tries to give false  attendance  he will be notified so that he can be alert.
-- Case reported : When an officer reports a case.
+- Attendance verification :  on successful marking of attendance.
+- Attendance misbehaviour :  If someone tries to give false  attendance then  they will be notified so that he can be alert.
+- Case reported : When an officer succefully reports a case.
 - Checkpoint marked : When the officer travels from one checkpoint to another.
 
 ### 2.5 Profile Page:
 
 ![Profile](Images/profile.PNG)
 
-The officer can view and update his own profile. It consists of user information 
+The officer can view and update his own profile. It consists of following informations: 
 -  Tracking link 
 -  Personal details 
--  Resources allocated to him.
+-  Resources allocated to them
 
 Also, he can view his attendance %, experience and reviews.
 
