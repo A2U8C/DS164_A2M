@@ -36,7 +36,7 @@
                             - Complaint Report
                             - Attendance Report
                         4.3 Multilingual
-                        4.4 Chatbot
+                        4.4 In-built chat feature
                         4.5 Andaman and Nicobar Island
                 5. Offilne Mode 
                 6. (SOS Button) Emergency Assistance
@@ -177,7 +177,7 @@ The officer can view and update his own profile. It consists of following inform
 -  Personal details 
 -  Resources allocated to them
 
-Also, he can view his attendance %, experience and reviews.
+Also, they can view their attendance, experience and reviews.
 
 ### 2.6 Your Tracker :
 
@@ -190,10 +190,10 @@ Also, he can view his attendance %, experience and reviews.
 ## 3. Diary maintenance
         
 ### 3.1. Launch  Complaint: 
-The officer can view the various complaints and their details.Also enables an officer to file a report against illegal activities.
-There are 2 tabs :
-- Open : Which is visible to all the officers.
-- Serious : Which is visible to the higher officers.
+The officer can view various complaints and their details. Also enables an officer to file a report against illegal activities.
+For viewing recorded cases there are 2 types of cases:
+- Open cases: Which is visible to all the officers.
+- Serious cases: Which is visible only to the restricted officers according to their hierarchy.
 
 They can view the details of the full case and also export as pdf which is stored in internal storage and pdf can easily be shared through whatsapp or other platforms.
 For filling a case :
@@ -214,8 +214,8 @@ For filling a case :
 ![News](Images/news_user.jpeg)
 
 - This feature is controlled by the admin.
-- The admin decides the news which needs to be broadcasted to all the officers considering the severity of the case.
-- The officers can only view these news. The officers are not eligible to create or delete posts in News Broadcasting feature. 
+- Only admin has the privilege to decide which news needs to be broadcasted to all the officers considering the severity of the case.
+- The officers can only view these news.
 
 ### 4.2. Report generation
 
@@ -223,7 +223,7 @@ For filling a case :
 
 - This application provides the feature of generating reports for complaints.
 - The generated pdf for complaints consist of images and information that were uploaded during complaint registration along with the e-signature.
-- Another type of pdf generated is for classifying the type of complaints and displaying all the complaints under different categories.
+- Another type of report generated is for classifying the type of complaints and displaying all the complaints under different categories.
 
 ### 4.3. In-built chat feature:
 
@@ -233,7 +233,7 @@ For filling a case :
 - This feature enables the officer to share information with their fellow officer through chat.
 
 ### 4.4. Andaman and Nicobar Island:
-- It contains all the details about divisions and ranges of Andaman Forest. 
+- It contains information regarding the divisions and ranges of Andaman and Nicobar Forest. 
 
 ## 5. Offline Mode
 - This feature is added considering the fact that the officers will not have a continuous internet service in the forest.
