@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abc.sih.Reports.ReportComp">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/type"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upar">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/abt_user">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_single_image"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/default_avatar" />
+                    <TextView
+                        android:id="@+id/user_single_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Display Name"
+                        android:textColor="#000000"
+
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textColor="#0B8DF4"
+                        android:id="@+id/postime"
+                        android:layout_marginTop="15dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="50dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/abt_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:id="@+id/layy1">
+
+                    <ImageView
+                        android:id="@+id/uploaded_image"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:src="#ECECEC"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="7dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="7dp">
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report Type"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/case_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt1"
+                            android:text="Poaching"
+                            android:textColor="#0B8DF4"/>
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/case_type"
+                            android:text="Report View Time"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/case_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt2"
+                            android:text="Report time date"
+                            android:textColor="#0B8DF4"/>
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/case_time"
+                            android:text="Case Assigned"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/case_assgnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt3"
+                            android:text="No"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0B8DF4"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="29dp"
+                    android:layout_below="@+id/layy1"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/heart"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/upvote_icon"
+                    android:clickable="true"/>
+                <!--android:onClick="onClick"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24dp"
+                    android:textColor="#fff"
+                    android:layout_below="@id/layy1"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/upvote_icon"
+                    android:id="@+id/likes"/>
+
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/layy1"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/comment_icon"
+                    android:id="@+id/comment"/>
+            </RelativeLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/upar"
+                android:id="@+id/comments_list"
+                android:layout_above="@+id/type">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <at.markushi.ui.CircleButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:id="@+id/type"
+        android:src="@drawable/send_img"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_toLeftOf="@+id/type"
+        android:background="@drawable/tpp"
+        android:hint="Enter message.."
+        android:paddingLeft="10dp"
+        android:paddingTop="16dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="12dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="launch_complain">Launch Complain</string>
+    <string name="open">Open</string>
+    <string name="mark_check_point">Mark Check Point</string>
+    <string name="your_tracker">Your Tracker</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="department_assets">Department Assets</string>
+    <string name="forest_resource">Forest Resources</string>
+    <string name="alert_zones">Alert Zones</string>
+
+    <!-- Zonecreate.java -->
+
+    <string name="zone_create">Select type of zone</string>
+    <string name="zone_radius">Enter radius of the zone</string>
+    <string name="create_zone">Create Zone</string>
+</resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckpointActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record Checkpoint"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/tick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tickinsidecircle"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/ca1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP A"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#0B8DF4"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/notes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"/>
+
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter data"
+                    android:background="@drawable/rec_gradient"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info>>"
+                    android:visibility="invisible"
+                    android:textColor="@color/finale"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/tick2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tickinsidecircle"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/ca2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP B"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#0B8DF4"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/notes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"/>
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter data"
+                    android:background="@drawable/rec_gradient"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info>>"
+                    android:visibility="invisible"
+                    android:textColor="@color/finale"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/tick3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tickinsidecircle"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/ca3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP C"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#0B8DF4"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/notes3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter data"
+                    android:background="@drawable/rec_gradient"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/info3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info>>"
+                    android:textColor="@color/finale"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/tick4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tickinsidecircle"
+
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/ca4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CP D"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#0B8DF4"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/notes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"/>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter data"
+                    android:background="@drawable/rec_gradient"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/info4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info>>"
+                    android:visibility="invisible"
+                    android:textColor="@color/finale"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
