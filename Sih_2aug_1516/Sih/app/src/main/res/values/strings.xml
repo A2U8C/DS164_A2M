@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Sih</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fir_registration">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hint2"><![CDATA[Poaching/Smuggling/..etc<font color=\'#cc0029\'>*</font>]]></string>
+
+    <string name="hint_aadhar"><![CDATA[Uploader Name<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_country"><![CDATA[Your circle code<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_passport"><![CDATA[Your name<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_address"><![CDATA[Circle Code<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_mobile"><![CDATA[Mobile Number<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_email"><![CDATA[Contact Email<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_details"><![CDATA[Brief Your Report<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_relation"><![CDATA[Time and Date<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="input_code"><![CDATA[Enter Circle Code<font color=\'#cc0029\'>*</font>]]></string>
+
+    <string name="launch_complain">Launch Complain</string>
+    <string name="open">Open</string>
+    <string name="mark_check_point">Mark Check Point</string>
+    <string name="your_tracker">Your Tracker</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="department_assets">Department Assets</string>
+    <string name="forest_resource">Forest Resources</string>
+    <string name="alert_zones">Alert Zones</string>
+
+    <!-- Zonecreate.java -->
+    <string name="zone_create">Select type of zone</string>
+    <string name="zone_radius">Enter radius of the zone</string>
+    <string name="create_zone">Create Zone</string>
+    <string name="title_activity_view_map_cases">Map</string>
+</resources>

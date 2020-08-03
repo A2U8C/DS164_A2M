@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:background="#DA5F6A"
+        android:text="Report"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:id="@+id/Rr"
+        android:weightSum="2"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please state your reason"
+            android:id="@+id/text_dialog"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textColor="#ff000000"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/reason"
+
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:hint="reason"
+
+            android:layout_marginLeft="10dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rr"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btn_dialog"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/Rr"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btn_can"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/Rr"
+            android:layout_margin="20dp"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="launch_complain">शिकायत शुरू करें</string>
+    <string name="open">खोले</string>
+    <string name="mark_check_point">मार्क चेक प्वाइंट</string>
+    <string name="your_tracker">आपका ट्रैकर</string>
+    <string name="mark_attendance">मार्क अटेंडेंस</string>
+    <string name="department_assets">विभाग की संपत्ति</string>
+    <string name="forest_resource">वन संसाधन</string>
+    <string name="alert_zones">अलर्ट जोन</string>
+
+    <!-- Zonecreate.java -->
+    <string name="zone_create">ज़ोन का प्रकार चुनें</string>
+    <string name="zone_radius">जोन का त्रिज्या दर्ज करें</string>
+    <string name="create_zone">जोन बनाएं</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminQrCodeGenerateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Generate QR-Code"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/finale"
+                            android:textSize="18dp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <EditText
+                    android:id="@+id/division_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Division Name"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:id="@+id/range_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/division_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Range Name"
+                    android:layout_marginTop="7dp"/>
+
+                <EditText
+                    android:id="@+id/beat_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/range_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Beat Name"
+                    android:layout_marginTop="7dp"/>
+
+                <EditText
+                    android:id="@+id/code_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/beat_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Checkpoint Name"
+                    android:layout_marginTop="7dp"/>
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/code_name"
+                    android:background="@drawable/rec_gradient"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:layout_below="@+id/btn"
+                    android:id="@+id/qrcode"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:padding="4dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:layout_centerHorizontal="true"
+                    />
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate PDF"
+                    android:textColor="#ffffff"
+                    android:layout_below="@+id/qrcode"
+                    android:background="@drawable/rec_gradient"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
