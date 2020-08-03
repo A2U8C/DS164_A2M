@@ -40,7 +40,7 @@
                         4.5 Andaman and Nicobar Island
                 5. Offilne Mode 
                 6. (SOS Button) Emergency Assistance
-                7. User-friendly
+                7.User-friendly
                         7.1 Multi-Lingual
                         7.2 Speech Recognition
 
@@ -85,7 +85,8 @@ Firebase Database, SQLite,  SharedPreference.
 
 
 # Use-case diagram:
-![](Images/usecase..PNG)
+
+
 
 # System implementaion for Admin :
 ### 1.Creation of Geo-fenced area:
@@ -261,7 +262,7 @@ For filling a case :
 To make this application understandable to lay users we have provided multilingual support. So it would be easy for officers to handle this app. He can choose the language in which he is comfortable.
 
 ### 7.2. Speech Recognition:
-To make an application user friendly we have added text to speech feature which will enable an offcier to voice command an application. 
+To make an application user friendly we have added text to speech feature which will enable an officer to voice command an application. 
 
 
 
