@@ -232,14 +232,17 @@ For filling a case :
 - The generated pdf for complaints consist of images and information that were uploaded during complaint registration along with the e-signature.
 - Another type of report generated is for classifying the type of complaints and displaying all the complaints under different categories.
 
-### 4.3. In-built chat feature:
+## 4.3. Multilingual support
+- This feature provides the user multi-language support which will increase the user-friendly nature of the application.
+
+### 4.4. In-built chat feature:
 
 ![Chat](Images/chat.jpeg)
 
 - This application has an in-built chat application for the officers.
 - This feature enables the officer to share information with their fellow officer through chat.
 
-### 4.4. Andaman and Nicobar Island:
+### 4.5. Andaman and Nicobar Island:
 - It contains information regarding the divisions and ranges of Andaman and Nicobar Forest. 
 
 ## 5. Offline Mode:
