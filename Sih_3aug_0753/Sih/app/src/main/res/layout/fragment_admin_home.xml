@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Console"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/finale"/>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/colorcard1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Monitor Attendance(Date Wise)"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#EA4335" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard1"
+                        android:id="@+id/colorcard2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Monitor Beat Activity"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_2"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_2"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#0097FF" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard2"
+                        android:id="@+id/colorcard3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Verify Officers"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_3"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_3"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#FBBC05" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard3"
+                        android:id="@+id/colorcard4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View Zones"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_4"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_4"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#34A853" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard4"
+                        android:id="@+id/colorcard5">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View Activity on Map"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_5"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_5"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#EA4335" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard5"
+                        android:id="@+id/colorcard6">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Beat QR Code"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_6"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_6"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#0097FF" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard6"
+                        android:id="@+id/colorcard7">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Case Report"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_7"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_7"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#FBBC05" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_below="@+id/colorcard7"
+                        android:id="@+id/colorcard8">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <TextView
+                                android:id="@+id/section_text_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Generate Query Reports"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textStyle="bold"
+                                android:textColor="@color/new_color"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:layout_toLeftOf="@+id/halfcircle1_8"
+                                android:layout_alignParentStart="true"
+                                android:padding="10dp"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/halfcircle1_8"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="-90dp"
+                                android:src="#34A853" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

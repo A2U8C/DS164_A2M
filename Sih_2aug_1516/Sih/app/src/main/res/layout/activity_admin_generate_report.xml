@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminGenerateReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/finale"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/repo_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Report"
+            android:background="@drawable/rec_gradient"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:elevation="4dp"
+    android:id="@+id/main_toolbar"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overall"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/notifquestion"
+            android:layout_marginRight="10dp"
+            android:id="@+id/question_icon"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/question_icon"
+            android:layout_toLeftOf="@+id/msgs"
+            android:background="@drawable/search_input_style"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="search"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#111111" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/msgs"
+            android:src="@drawable/notifmessage" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

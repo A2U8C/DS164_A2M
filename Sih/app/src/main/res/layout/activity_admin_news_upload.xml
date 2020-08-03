@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminNewsUploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/upd_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="#ECECEC"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/upd_image"
+                    android:text="Post type"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <EditText
+                    android:id="@+id/post_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="5dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Image/Video"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_type"
+                    android:text="Location"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <EditText
+                    android:id="@+id/post_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt2"
+                    android:layout_marginTop="5dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_marginLeft="10dp"
+                    android:hint="location"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_location"
+                    android:text="Post Title"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <EditText
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:layout_marginTop="5dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Post title"
+                    android:layout_marginRight="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_title"
+                    android:text="Post Content"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <EditText
+                    android:id="@+id/post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt4"
+                    android:layout_marginTop="5dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Post Content"
+                    android:layout_marginRight="10dp"/>
+
+
+                <Button
+                    android:id="@+id/upd_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_content"
+                    android:text="Upload News"
+                    android:background="@drawable/rec_gradient"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+
+    
+
+
+</RelativeLayout>

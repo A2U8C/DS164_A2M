@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCPNotesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CP Notes"
+                            android:textColor="@color/finale"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="18dp"/>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/cp_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="sdnjnsf"
+                    android:textSize="16dp"
+                    android:textColor="#000000"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/cp_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/input_attach1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#aca9a9"
+                        android:src="@drawable/add_image" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/input_attach2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@+id/input_attach1"
+                        android:background="#aca9a9"
+                        android:src="@drawable/add_image" />
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/input_attach3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/text7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@+id/input_attach2"
+                        android:background="#aca9a9"
+                        android:src="@drawable/add_image" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

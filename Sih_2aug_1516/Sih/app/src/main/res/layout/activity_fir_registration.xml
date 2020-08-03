@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/trying"
+             />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:id="@+id/sub"
+                android:layout_below="@+id/trying"/>
+        -->
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="File FIR"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:id="@+id/spchact"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/mic1"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Complaint Type"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/input_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the Endangered Species"
+                android:layout_below="@id/input_type"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/textspecies"
+                android:textStyle="bold"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"/>
+
+            <Spinner
+                android:id="@+id/specieselect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textspecies"
+                android:visibility="gone"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/specieselect"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Personal"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Account holder using phone?"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/text4"
+                android:background="#35ba1a"
+                android:text="Yes"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_toRightOf="@+id/btn1"
+                android:background="#ffffff"
+                android:text="No"
+                android:textColor="#35ba1a" />
+            <TextView
+                android:id="@+id/acstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Access"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/acs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@id/btn1"
+                android:background="#35ba1a"
+                android:text="Open"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/acs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/acs1"
+                android:background="#ffffff"
+                android:text="Restricted"
+                android:textColor="#35ba1a" />
+
+            <EditText
+                android:id="@+id/input_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acstext"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_aadhar"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Your Information"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_mobile"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_email"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Details of the Complaint"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/cursor_color" />
+            <TextView
+                android:id="@+id/tp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearest Checkpoint"
+                android:layout_marginLeft="7dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/input_details"/>
+            <Spinner
+            android:id="@+id/checkpoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tp_txt"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/input_relation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkpoint"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/cursor_color" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_relation"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="20dp"
+                android:text="Attachments"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/input_attach1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="#aca9a9"
+                android:src="@drawable/add_image" />
+
+            <ImageView
+                android:id="@+id/input_attach2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/input_attach1"
+                android:background="#aca9a9"
+                android:src="@drawable/add_image" />
+
+            <ImageView
+                android:id="@+id/input_attach3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/input_attach2"
+                android:background="#aca9a9"
+                android:src="@drawable/add_image" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add e-Signature"
+                android:textColor="#1089E9"
+                android:textSize="20dp"
+                android:layout_below="@+id/input_attach3"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/esign"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greentick"
+                android:layout_below="@+id/input_attach3"
+                android:layout_toRightOf="@+id/esign"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="invisible"
+                android:id="@+id/green_tick"/>
+
+            <CheckBox
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esign"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="I acknowledge that all the information i have entered
+is correct and I will be fully responsible for it if
+otherwise proven"
+                android:textColor="#2e8f41"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/terms"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ovalbuttons"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
