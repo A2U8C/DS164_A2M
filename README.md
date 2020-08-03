@@ -83,25 +83,27 @@ Firebase Database, SQLite,  SharedPreference.
 ![](Images/Geo.PNG)
 - Based on the interpretation of IRS satellite data of the period Apr 2017 to Mar 2018, the Forest Cover in the UT is 6,742.78 sq km which is 81.74 % of the UT's geographical area.
 - The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
+- This feature enables the admin to create new geo-fences.
 
 ### 2. Monitor Attendance (Date wise)
 - The admin has the provision to view the attendance of the officers on a specific date.
  
 ### 3. Monitor Beat Activity 
+-This feature enables the admin to monitor all activities of the officers at a specific checkpoint.
         
 ### 4. Verify Officer 
-- This feature enables the admin to verify the users, who have recently registered. 
+- This feature enables the admin to verify new users, who have recently registered. 
 - This will ensure that no illegitimate registration takes place.
 
 ### 5. View Zones
-- This provision enables the admin to add or remove red, blue or yellow regions.
+- This provision enables the admin to **add** or **remove** red, blue or yellow regions.
 - Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
 
 ### 6. View Activity on Map
 - The admin can view the coordinates of the illegal tree cutting and poaching activities.  
   
 ### 7. Generate OR code
-- This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance and checkpoints.
+- This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance.
 - This feature is unique to admin.
 
 ### 8. News broadcasting
@@ -109,7 +111,7 @@ Firebase Database, SQLite,  SharedPreference.
 - The admin can add or delete posts which are broadcasted to all the officers.
 
 
-# System implementation for Users(Officers)
+# System implementation for Users (Officers)
 ![](Images/image.PNG)
 
 ## 1. Geo-fencing Module
