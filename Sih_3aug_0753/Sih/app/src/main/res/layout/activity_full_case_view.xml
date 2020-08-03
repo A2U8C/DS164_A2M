@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullCaseViewActivity"
+    android:id="@+id/main_print">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/upper_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_image"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="#ECECEC"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/user_profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:layout_toRightOf="@+id/user_profile_image"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/poppins_bold"/>
+
+                    <TextView
+                        android:id="@+id/upload_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Time"
+                        android:layout_toRightOf="@+id/user_profile_image"
+                        android:layout_below="@+id/user_profile_name"
+                        android:layout_marginLeft="7dp"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/case_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/upper_layout">
+
+                    <ImageView
+                        android:id="@+id/case_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="#ECECEC"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:id="@+id/other_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_image"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageView
+                            android:id="@+id/case_image2"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="7dp"
+                            android:src="#ECECEC"/>
+
+                        <ImageView
+                            android:id="@+id/case_image3"
+                            android:layout_width="0dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="7dp"
+                            android:src="#ECECEC"/>
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/case_report_type_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/other_images"
+                        android:text="Case Type"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_type_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_report_type_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="Hunting/Poaching...."/>
+
+                    <TextView
+                        android:id="@+id/specie_type_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_type_details"
+                        android:text="Species"
+                        android:visibility="gone"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/species_type_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/specie_type_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/case_report_details_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/species_type_detail"
+                        android:text="Report Details"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_report_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_report_details_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="Case Details Text...."/>
+
+                    <TextView
+                        android:id="@+id/case_time_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_report_details"
+                        android:text="Report View Time"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_time_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_time_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="Case Time and Date"/>
+
+                    <TextView
+                        android:id="@+id/case_assigned_text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_time_details"
+                        android:text="Case Assigned"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_assigned_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_assigned_text1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#06F110"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="YES"/>
+
+                    <TextView
+                        android:id="@+id/case_urgency_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_assigned_details"
+                        android:text="Case Urgent Reports"
+                        android:textColor="#0B8DF4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_urgency_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_urgency_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="Likes Count"/>
+
+                    <TextView
+                        android:id="@+id/case_geolong_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_urgency_details"
+                        android:textColor="#0B8DF4"
+                        android:text="Geo-Longitude"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_geolong_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_geolong_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="*"/>
+
+                    <TextView
+                        android:id="@+id/case_geolat_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_geolong_details"
+                        android:textColor="#0B8DF4"
+                        android:text="Geo-Latitude"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="16dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/case_geolat_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/case_geolat_text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="*"/>
+
+
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/user_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/case_details"
+                    android:text="Uploader Information"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/user_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_text"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/uploader_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/uploader_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Uploader Name:"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TextView
+                            android:id="@+id/uploader_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/uploader_name_text"
+                            android:text="Uploader_name"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0B8DF4"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="16dp"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/uploader_mobile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/uploader_name_layout"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:id="@+id/uploader_mobile_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Uploader Mobile:"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TextView
+                            android:id="@+id/uploader_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/uploader_mobile_text"
+                            android:text="Phone Number"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0B8DF4"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="16dp"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/uploader_email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/uploader_mobile_layout"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:id="@+id/uploader_email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Uploader Email:"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TextView
+                            android:id="@+id/uploader_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/uploader_email_text"
+                            android:text="Email ID"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0B8DF4"
+                            android:layout_marginLeft="7dp"
+                            android:textSize="16dp"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/uploader_sign_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/uploader_email_layout"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:id="@+id/uploader_sign_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="Uploader Sign:"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <ImageView
+                            android:id="@+id/uploader_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/uploader_sign_text"
+                            android:src="#ECECEC" />
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/pdfbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Export As PDF"
+                        android:layout_below="@+id/uploader_sign_layout"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rec_gradient"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
