@@ -7,7 +7,7 @@
 * Use case diagram
 * System implementation details
 
-        - **Admin**
+        - Admin
                 1. Creation of Geo-fenced area
                 2. Monitor Attendance (Date wise)
                 3. Monitor Beat Activity 
@@ -16,7 +16,7 @@
                 6. View Activity on Map
                 7. Generate QR code
                 8. News broadcasting
-        - **Users (Officers)**
+        - Users (Officers)
                 1. Geo-fencing Module
                         1.1. Alert zone
                 2. Staff Management Module
