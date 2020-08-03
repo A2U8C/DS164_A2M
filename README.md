@@ -112,7 +112,7 @@ Firebase Database, SQLite,  SharedPreference.
 ### 6. View Activity on Map:
 - The admin can view the coordinates of the illegal tree cutting and poaching activities.  
   
-### 7. Generate OR code:
+### 7. Generate QR code:
 - This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance.
 - This feature is unique to admin.
 
@@ -259,7 +259,7 @@ For filling a case :
 ## 7.User-friendly:
 
 ### 7.1. Multi-Lingual:
-To make this application understandable to lay users we have provided multilingual support. So it would be easy for officers to handle this app. He can choose the language in which he is comfortable.
+To make this application understandable to lay users we have provided multilingual support. So it would be easy for officer to handle this app. He can choose the language in which he is comfortable.
 
 ### 7.2. Speech Recognition:
 To make an application user friendly we have added text to speech feature which will enable an officer to voice command an application. 
