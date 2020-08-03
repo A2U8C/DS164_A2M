@@ -43,8 +43,12 @@
 
 
 
-## Problem Statement: Development of App to capture the field patrolling track of frontline staff in their forest beat jurisdiction.
-Problem Statement Description: Develop an app to capture information related to **field patrolling officers** for forest and wildlife assets for patrolling personnel posted in the field.The following information can be recorded - 
+# Problem Statement: Development of App to capture the field patrolling track of frontline staff in their forest beat jurisdiction.
+
+# Problem Statement Description: 
+Develop an app to capture information related to **field patrolling officers** for forest and wildlife assets for patrolling personnel posted in the field.
+
+The following information can be recorded - 
 1. location for their **safety**,
 2. **asset**, location, and other information about the asset like weight, etc depending on the asset.
 
@@ -67,15 +71,43 @@ Firebase Database, SQLite,  SharedPreference.
 - sourceCompatibility JavaVersion.VERSION_1_8
 - Firebase version 15.+
 
-## External Dependencies
-- [PlotProjects] (https://www.plotprojects.com/)for Geo-fencing
-- [Hypertrack] (https://www.hypertrack.com/)for tracking purposes
+# External Dependencies
+- [PlotProjects] (https://www.plotprojects.com/) for Geo-fencing.
+- [Hypertrack] (https://www.hypertrack.com/) for tracking purposes.
 
-# Main Objective
+# Use-case diagram
+
+
+# System implementaion for Admin 
+### 1.Creation of Geo-fenced area
+
+### 2. Monitor Attendance (Date wise)
+- The admin has the provision to view the attendance of the officers on a specific date.
+ 
+### 3. Monitor Beat Activity 
+        
+### 4. Verify Officer 
+- This feature enables the admin to verify the users, who have recently registered. 
+- This will ensure that no illegitimate registration takes place.
+
+### 5. View Zones
+- This provision enables the admin to add or remove red, blue or yellow regions.
+- Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
+
+### 6. View Activity on Map
+- The admin can view the coordinates of the illegal tree cutting and poaching activities.  
+  
+### 7. Generate OR code
+- This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance and checkpoints.
+- This feature is unique to admin.
+
+### 8. News broadcasting
+- The admin decides the news which need to be broadcasted to all the officers considering the severity of the case.
+- The admin can add or delete posts which are broadcasted to all the officers.
+
+
+# System implementation for Users(Officers)
 ![](Images/image.PNG)
-
-
-
 
 ## 1. Geo-fencing Module
 ![](Images/Geo.PNG)
@@ -211,29 +243,3 @@ For filling a case :
 - Network Provider and GPS Provider is used in tracking the location of the officers.
 
 
-# Admin Dashboard 
-### 1.Creation of Geo-fenced area
-
-### 2. Monitor Attendance (Date wise)
-- The admin has the provision to view the attendance of the officers on a specific date.
- 
-### 3. Monitor Beat Activity 
-        
-### 4. Verify Officer 
-- This feature enables the admin to verify the users, who have recently registered. 
-- This will ensure that no illegitimate registration takes place.
-
-### 5. View Zones
-- This provision enables the admin to add or remove red, blue or yellow regions.
-- Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
-
-### 6. View Activity on Map
-- The admin can view the reports which depict the illegal tree cutting, poaching activities.  
-  
-### 7. Generate OR code
-- This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance and checkpoints.
-- This feature is unique to admin.
-
-### 8. News broadcasting
-- The admin decides the news which need to be broadcasted to all the officers considering the severity of the case.
-- The admin can add or delete posts which are broadcasted to all the officers.
