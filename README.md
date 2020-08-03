@@ -46,16 +46,15 @@ Firebase Database, SQLite,  SharedPreference.
             - Complaint Report
             - Attendance Report
         3. Multilingual
-        4. Chatbhot
+        4. Chatbot
         5. Andaman and Nicobar Island
 ### 5. Offilne Mode 
 ### 6. (SOS Button) Emergency Assistance
 
 ## Registration:
-        - The Forest officer has to authenticate by scanning the QR code of Aadhar card so it 
-        automatically fetches all the required information.
-        - The status details are to be filled mainly about division, ranges and beats.
-        Lastly, the verification request will be sent to their superior. Once they accept, the officer is verified.
+- The Forest officer has to authenticate by scanning the QR code of the Aadhar card which will enhance the authentication feature of the app. The required information is fetched automatically which reduces the burden of manually entering each and every field.
+- The other fields such as information regarding division, ranges and beats has to be entered manually.
+- The registration process is completed only after the admin or other higher level officer verify the registration.
 
 ## 1. Geo-fencing Module
 ![](Images/Geo.PNG)
@@ -66,9 +65,9 @@ Firebase Database, SQLite,  SharedPreference.
  ### 1.1. Alert zone 
 ![Alertzone](Images/Alertzone.PNG)
 
-1. The forest officer can create or view the zones near him.
-2. They are either yellow,red zone and blue zone . Yellow zone are for illegal tree cutting and red for poaching      activity.
-3. This will help the officers in getting vivid clarification of the areas which requires special attention.
+1. The forest officer can create or view zones near them.
+2. They are either yellow,red zone or blue zone. The Yellow zones represents illicit tree cutting and red represents poaching activities.
+3. This will help the officers in getting vivid idea of the areas which requires special attention.
 4. The officer can create the new zone by providing the details like type of zone and radius of zone(in meters).
 
 
@@ -81,18 +80,18 @@ Firebase Database, SQLite,  SharedPreference.
 4. Forest guard.
 
 ### 2.1. Attendance marker
-- We have added a two-way authentication process to avoid forgery. To mark the attendance follow the procedure :
+- We have implemented a two-way authentication process to avoid forgery. To mark the attendance follow the procedure :
 1. The officer has to click a picture for face authentication 
-2. Scan the QR code and if it matches then he will get verified.
+2. Then the user will be navigated to the QR code section, once the QR code is scanned, the location of the user is also stored to avoid illegitimate attendance marking.
 
 ### 2.2. Resource Allocation(Department Assets, Forests Resources): 
 
 ![Res](Images/allocate.PNG)
 
-- Our app assists in the allocation and helps to maintain logs.
+- This feature enables the higher officer to allocate and deallocate resources to the lower officers. There is a feature of logs which is automatically updated when a resource is allocated or surrendered.
 - DCF/DFO and RFO have the authority to allocate and deallocate the resources to the beat guards.
-- The logs can be viewed by a higher officer which contents Assigned by, Assigned To and Date and Time). 
-- The beat guard has to return the assigned resource to their superior once the use is done and update in the    application .
+- The logs can be viewed by the higher officer, which is represented in the yabular format (Assigned by, Assigned To and Date and Time). 
+- The beat guard has to return the assigned resource to their superior officer through this application.
 
 
 ### 2.3. Notification Activity:
@@ -122,8 +121,8 @@ Also, he can view his attendance %, experience and reviews.
 
 ![Your tracker](Images/Track.jpeg)
 
-- To track the path of a particular officer. 
-- One can also share his trip to other officers in an emergency.
+- This feature is used To track the path followed by a particular officer to ensure their safety. 
+- The location of the officer is visible only to the higher officers.
 
 
 ## 3. Diary maintenance
@@ -154,7 +153,7 @@ For filling a case :
 
 - This feature is controlled by the admin.
 - The admin decides the news which needs to be broadcasted to all the officers considering the severity of the case.
-- The admin can delete and add posts that are broadcasted to all the officers.
+- The officers can only view these news. The officers are not eligible to create or delete posts in News Broadcasting feature. 
 
 ### 4.2. Report generation
 
@@ -164,17 +163,19 @@ For filling a case :
 - The generated pdf for complaints consist of images and information that were uploaded during complaint registration along with the e-signature.
 - Another type of pdf generated is for classifying the type of complaints and displaying all the complaints under different categories.
 
-### 4.3. Chatbhot:
+### 4.3. In-built chat feature:
 
 ![Chat](Images/chat.jpeg)
 
-- The officer can chat with their colleague one on one easily.
+- This application has an in-built chat application for the officers.
+- This feature enables the officer to share information with their fellow officer through chat.
 
 ### 4.4. Andaman and Nicobar Island:
 - It contains all the details about divisions and ranges of Andaman Forest. 
 
 ## 5. Offline Mode
-- In case of absence of network connection, the data is stored in the offline database which is synced to the central database when the device is online again.
+- This feature is added considering the fact that the officers will not have a continuous internet service in the forest.
+- While being offline, the user will have the the privilege of registering a complaint which will be later synced to the central database.
 
 ## 6. SOS Button (Emergency call button)
 ![alt text](./Images/sos.jpeg)
@@ -194,22 +195,25 @@ For filling a case :
 7. News broadcasting
 
 ### 1. Monitor Attendance (Date wise)
-- The admin can view the day-wise attendance report of all the officers.
+- The admin has the provision to view the attendance of the officers on a specific date.
  
 ### 2. Monitor Beat Activity 
-
         
-### 3. Verify Ofiicer 
+### 3. Verify Officer 
+- This feature enables the admin to verify the users, who have recently registered. 
+- This will ensure that no illegitimate registration takes place.
 
 ### 4. View Zones
+- This provision enables the admin to add or remove red, blue or yellow regions.
+- Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
 
 ### 5. View Activity on Map
 - The admin can view the reports which depict the illegal tree cutting, poaching activities.  
   
-### 6. Generate QR code
-- The admin can generate beat QR code by entering the details like division name, range name, beat name and checkpoint name and can generate pdf.
+### 6. Generate OR code
+- This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance and checkpoints.
+- This feature is unique to admin.
 
 ### 7. News broadcasting
-- All the things that are happening around the officer will be broadcasted So the officer will get updated about 
-forgery, illegal activities happening around him, and also he can be alert.
-- The admin can add and delete the broadcasted news
+- The admin decides the news which need to be broadcasted to all the officers considering the severity of the case.
+- The admin can add or delete posts which are broadcasted to all the officers.
