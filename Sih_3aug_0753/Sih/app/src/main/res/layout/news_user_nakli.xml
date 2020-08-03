@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="12dp"
+    tools:ignore="ContentDescription">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/postLay"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/popup"
+                android:layout_height="250dp"
+                android:id="@+id/imag"
+
+                />
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/vid"
+                android:clickable="false"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/popup"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/popup"
+                style="?android:attr/actionOverflowButtonStyle"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postLay"
+            android:orientation="horizontal"
+            android:id="@+id/locat"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/location"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_text"
+                android:layout_weight="1"
+                android:text="Location"
+                android:textColor="#0A2ADD"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="News Title"
+            android:textColor="#070707"
+            android:id="@+id/title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_below="@id/title"
+            android:text="News Content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="#0B0B0B"
+            android:fontFamily="@font/poppins"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+</RelativeLayout>

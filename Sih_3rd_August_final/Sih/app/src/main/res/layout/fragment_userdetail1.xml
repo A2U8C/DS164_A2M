@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdetail1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#2196F3" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:id="@+id/layoutInput"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_white"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/add_image"
+                    android:id="@+id/prof"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Hierarchy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:drawablePadding="20dp"
+                    android:id="@+id/type"
+                    android:hint="Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:drawablePadding="20dp"
+                    android:id="@+id/status"
+                    android:hint="Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:drawablePadding="20dp"
+                    android:id="@+id/station"
+                    android:hint="Station"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Enter Division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Enter Range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Enter Beat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+
+                <Button
+                    android:textColor="#FFF"
+                    android:background="@drawable/rec_gradient"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/next"
+                    android:text="Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- <ImageView
+                 android:id="@+id/imageVIew"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginBottom="5dp"
+                 android:layout_centerHorizontal="true"
+                 android:src="@mipmap/ic_launcher"
+                 android:background="@drawable/background_white"
+                 android:padding="5dp"
+                 android:layout_width="70dp"
+                 android:layout_height="70dp" />-->
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Enter your Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/user_name"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/commentTime"
+        android:layout_toRightOf="@+id/user_name"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="27dp"
+        android:textColor="#A9A9A9"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMMENT"
+        android:textColor="#0B8DF4"
+        android:textSize="16sp"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:id="@+id/cmmt"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/popup"
+        android:tint="#0B8DF4"
+        style="?android:attr/actionOverflowButtonStyle"/>
+
+
+
+
+</RelativeLayout>
