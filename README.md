@@ -4,6 +4,7 @@
 * Problem Description
 * Tech stack
 * Requirements
+* External Dependencies
 * Use case diagram
 * System implementation details
 
@@ -40,7 +41,7 @@
                 5. Offilne Mode 
                 6. (SOS Button) Emergency Assistance
 
-* External Dependencies
+
 
 ## Problem Statement: Development of App to capture the field patrolling track of frontline staff in their forest beat jurisdiction.
 Problem Statement Description: Develop an app to capture information related to **field patrolling officers** for forest and wildlife assets for patrolling personnel posted in the field.The following information can be recorded - 
