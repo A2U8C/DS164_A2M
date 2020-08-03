@@ -67,8 +67,8 @@ PHP
 Firebase Database, SQLite,  SharedPreference.
 
 
-# Requirements
-## Android Specification
+# Requirements:
+## Android Specification:
 - Minimum SdkVersion 24
 - TargetSdkVersion 29
 - VersionCode 1
@@ -76,57 +76,57 @@ Firebase Database, SQLite,  SharedPreference.
 - Firebase version 15.+
 
 
-# External Dependencies
+# External Dependencies:
 - [PlotProjects] (https://www.plotprojects.com/) for Geo-fencing.
 - [Hypertrack] (https://www.hypertrack.com/) for tracking purposes.
 
 
-# Use-case diagram
+# Use-case diagram:
 
 
 
-# System implementaion for Admin 
-### 1.Creation of Geo-fenced area
+# System implementaion for Admin :
+### 1.Creation of Geo-fenced area:
 ![](Images/Geo.PNG)
 - Based on the interpretation of IRS satellite data of the period Apr 2017 to Mar 2018, the Forest Cover in the UT is 6,742.78 sq km which is 81.74 % of the UT's geographical area.
 - The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
 - This feature enables the admin to create new geo-fences.
 
-### 2. Monitor Attendance (Date wise)
+### 2. Monitor Attendance (Date wise):
 - The admin has the provision to view the attendance of the officers on a specific date.
  
-### 3. Monitor Beat Activity 
+### 3. Monitor Beat Activity:
 -This feature enables the admin to monitor all activities of the officers at a specific checkpoint.
         
-### 4. Verify Officer 
+### 4. Verify Officer:
 - This feature enables the admin to verify new users, who have recently registered. 
 - This will ensure that no illegitimate registration takes place.
 
-### 5. View Zones
+### 5. View Zones:
 - This provision enables the admin to **add** or **remove** red, blue or yellow regions.
 - Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
 
-### 6. View Activity on Map
+### 6. View Activity on Map:
 - The admin can view the coordinates of the illegal tree cutting and poaching activities.  
   
-### 7. Generate OR code
+### 7. Generate OR code:
 - This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance.
 - This feature is unique to admin.
 
-### 8. News broadcasting
+### 8. News broadcasting:
 - The admin decides the news which need to be broadcasted to all the officers considering the severity of the case.
 - The admin can add or delete posts which are broadcasted to all the officers.
 
 
-# System implementation for Users (Officers)
+# System implementation for Users (Officers):
 ![](Images/image.PNG)
 
-## 1. Geo-fencing Module
+## 1. Geo-fencing Module:
 ![](Images/Geo.PNG)
 - The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
 - A notification is sent when the patrolling officer moves from one beat to another. 
 
- ### 1.1 Alert zone 
+ ### 1.1 Alert zone: 
 ![Alertzone](Images/Alertzone.PNG)
 
 1. The forest officer can create or view zones near them.
@@ -135,7 +135,7 @@ Firebase Database, SQLite,  SharedPreference.
 4. The officer can create the new zone by providing the details like type of zone and radius of zone(in meters).
 
 
-## 2. Staff Management / Hierarchy
+## 2. Staff Management / Hierarchy:
 ![Hierarchy](Images/tree.PNG)
 - The Forest department hierarchy is divided into various sub-levels which consists of :
         1. DCF/DFO (Deputy Conservator of Forests or Divisional Forest Officer) at Division Level
@@ -149,7 +149,7 @@ Firebase Database, SQLite,  SharedPreference.
 - The other fields such as information regarding division, ranges and beats has to be entered manually.
 - The registration process is completed only after the admin or other higher level officer **verifies** the registration.
 
-### 2.2 Attendance marker
+### 2.2 Attendance marker:
 - We have implemented a two-way authentication process to avoid forgery. For attendance marking, the officer has to follow two-step process:
 1. The officer has to click a picture for face authentication 
 2. Then the user will be navigated to the QR code section, once the QR code is scanned, the location of the user is also stored to avoid illegitimate attendance marking.
@@ -194,7 +194,7 @@ Also, they can view their attendance, experience and reviews.
 - The location of the officer is visible only to the higher officers.
 
 
-## 3. Diary maintenance
+## 3. Diary maintenance:
         
 ### 3.1. Launch  Complaint: 
 The officer can view various complaints and their details. Also enables an officer to file a report against illegal activities.
@@ -214,9 +214,9 @@ For filling a case :
 - He has to follow the same procedure until he completes all the 4 checkpoints.
 
 
-## 4. Report generation & Miscellaneous
+## 4. Report generation & Miscellaneous:
 
-### 4.1. News Broadcasting
+### 4.1. News Broadcasting:
 
 ![News](Images/news_user.jpeg)
 
@@ -224,7 +224,7 @@ For filling a case :
 - Only admin has the privilege to decide which news needs to be broadcasted to all the officers considering the severity of the case.
 - The officers can only view these news.
 
-### 4.2. Report generation
+### 4.2. Report generation:
 
 ![Report](Images/report.PNG)
 
@@ -242,11 +242,11 @@ For filling a case :
 ### 4.4. Andaman and Nicobar Island:
 - It contains information regarding the divisions and ranges of Andaman and Nicobar Forest. 
 
-## 5. Offline Mode
+## 5. Offline Mode:
 - This feature is added considering the fact that the officers will not have a continuous internet service in the forest.
 - While being offline, the user will have the the privilege of registering a complaint which will be later synced to the central database.
 
-## 6. SOS Button (Emergency call button)
+## 6. SOS Button (Emergency call button):
 ![alt text](./Images/sos.jpeg)
 - This feature enables the user to contact the closest officer in his/her vicinity.
 - This feature uses the location of every other officer stored in the Firebase database for calculating the distance between the user and the closest officer.
