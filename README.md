@@ -6,6 +6,7 @@
 * Requirements
 * Use case diagram
 * System implementation details
+
         - **Admin**
                 1. Creation of Geo-fenced area
                 2. Monitor Attendance (Date wise)
