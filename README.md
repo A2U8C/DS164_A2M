@@ -80,6 +80,9 @@ Firebase Database, SQLite,  SharedPreference.
 
 # System implementaion for Admin 
 ### 1.Creation of Geo-fenced area
+![](Images/Geo.PNG)
+- Based on the interpretation of IRS satellite data of the period Apr 2017 to Mar 2018, the Forest Cover in the UT is 6,742.78 sq km which is 81.74 % of the UT's geographical area.
+- The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
 
 ### 2. Monitor Attendance (Date wise)
 - The admin has the provision to view the attendance of the officers on a specific date.
