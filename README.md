@@ -46,6 +46,7 @@
 # Problem Statement: 
 ## Development of App to capture the field patrolling track of frontline staff in their forest beat jurisdiction.
 
+
 # Problem Statement Description: 
 Develop an app to capture information related to **field patrolling officers** for forest and wildlife assets for patrolling personnel posted in the field.
 
@@ -55,7 +56,8 @@ The following information can be recorded -
 
 A major requirement of this app will be **offline abilities**. It should work without internet access. This can be done by having **sync functionality** and subsequent **edits** should be recorded in the app and synced later on once the user is Online.
 
-# Tech Stack
+
+# Tech Stack:
 ## Web and Mobile Application:
 ### Front End :
 JAVA, XML, Android, HTML5, CSS , Bootstrap, Javascript, Laravel
@@ -63,6 +65,7 @@ JAVA, XML, Android, HTML5, CSS , Bootstrap, Javascript, Laravel
 PHP
 ### Database:
 Firebase Database, SQLite,  SharedPreference.
+
 
 # Requirements
 ## Android Specification
@@ -72,11 +75,14 @@ Firebase Database, SQLite,  SharedPreference.
 - sourceCompatibility JavaVersion.VERSION_1_8
 - Firebase version 15.+
 
+
 # External Dependencies
 - [PlotProjects] (https://www.plotprojects.com/) for Geo-fencing.
 - [Hypertrack] (https://www.hypertrack.com/) for tracking purposes.
 
+
 # Use-case diagram
+
 
 
 # System implementaion for Admin 
