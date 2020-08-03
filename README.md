@@ -40,7 +40,7 @@
                         4.5 Andaman and Nicobar Island
                 5. Offilne Mode 
                 6. (SOS Button) Emergency Assistance
-                7.User-friendly
+                7. User-friendly
                         7.1 Multi-Lingual
                         7.2 Speech Recognition
 
@@ -85,8 +85,7 @@ Firebase Database, SQLite,  SharedPreference.
 
 
 # Use-case diagram:
-
-
+![](Images/usecase.PNG)
 
 # System implementaion for Admin :
 ### 1.Creation of Geo-fenced area:
