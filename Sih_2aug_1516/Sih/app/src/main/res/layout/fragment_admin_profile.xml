@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stats for Admin"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/case_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            android:text="Number of Reported Cases"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="7dp"/>
+
+        <TextView
+            android:id="@+id/report_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/case_text"
+            android:layout_marginLeft="7dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#0B8DF4"/>
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/report_number"/>
+
+        <TextView
+            android:id="@+id/news_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="News Uploaded"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/chart"/>
+
+        <TextView
+            android:id="@+id/news_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/news_text"
+            android:layout_marginLeft="7dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#0B8DF4"/>
+
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="System Users"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/news_number"/>
+
+        <TextView
+            android:id="@+id/user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/user_text"
+            android:layout_marginLeft="7dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#0B8DF4"/>
+
+        <Button
+            android:id="@+id/admin_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_below="@+id/user_number"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rec_gradient"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/poppins_bold"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
