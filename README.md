@@ -8,7 +8,7 @@
 * Use case diagram
 * System implementation details
 
-        - Admin
+        - Admin dashboard
                 1. Creation of Geo-fenced area
                 2. Monitor Attendance (Date wise)
                 3. Monitor Beat Activity 
@@ -19,25 +19,25 @@
                 8. News broadcasting
         - Users (Officers)
                 1. Geo-fencing Module
-                        1.1. Alert zone
+                        1.1 Alert zone
                 2. Staff Management Module
-                        2.1. New user Registration
-                        2.2. Mark my attendance
-                        2.3. Resources allocation
-                        2.4. Notification Activity
-                        2.5. Profile Page
-                        2.6. Your Tracker
+                        2.1 New user Registration
+                        2.2 Mark my attendance
+                        2.3 Resources allocation
+                        2.4 Notification Activity
+                        2.5 Profile Page
+                        2.6 Your Tracker
                 3. Diary Management 
-                        3.1. Launch complaint
-                        3.2. Mark Checkpoint
+                        3.1 Launch complaint
+                        3.2 Mark Checkpoint
                 4. Report generation & Miscellaneous
-                        4.1. News Broadcasting
-                        4.2. Report genration 
+                        4.1 News Broadcasting
+                        4.2 Report genration 
                             - Complaint Report
                             - Attendance Report
-                        4.3. Multilingual
-                        4.4. Chatbot
-                        4.5. Andaman and Nicobar Island
+                        4.3 Multilingual
+                        4.4 Chatbot
+                        4.5 Andaman and Nicobar Island
                 5. Offilne Mode 
                 6. (SOS Button) Emergency Assistance
 
@@ -83,7 +83,7 @@ Firebase Database, SQLite,  SharedPreference.
 - The forest area is divided into 8 divisions, subdivided into ranges and then into beats and each beat is allocated to each beat officer.
 - A notification is sent when the patrolling officer moves from one beat to another. 
 
- ### 1.1. Alert zone 
+ ### 1.1 Alert zone 
 ![Alertzone](Images/Alertzone.PNG)
 
 1. The forest officer can create or view zones near them.
@@ -95,10 +95,10 @@ Firebase Database, SQLite,  SharedPreference.
 ## 2. Staff Management / Hierarchy
 ![Hierarchy](Images/tree.PNG)
 - The Forest department hierarchy is divided into various sub-levels which consists of :
-1. DCF/DFO (Deputy Conservator of Forests or Divisional Forest Officer) at Division Level
-2. RFO( Range forest officer) at Rangers level
-3. Beat guards at beat level.
-4. Forest guard.
+        1. DCF/DFO (Deputy Conservator of Forests or Divisional Forest Officer) at Division Level
+        2. RFO( Range forest officer) at Rangers level
+        3. Beat guards at beat level.
+        4. Forest guard.
 
 ### 2.1 Registration:
 - The Forest officer has to authenticate by scanning the QR code of the Aadhar card which will enhance the authentication feature of the app. The required information is fetched automatically which reduces the burden of manually entering each and every field.
@@ -212,28 +212,28 @@ For filling a case :
 
 
 # Admin Dashboard 
+### 1.Creation of Geo-fenced area
 
-
-### 1. Monitor Attendance (Date wise)
+### 2. Monitor Attendance (Date wise)
 - The admin has the provision to view the attendance of the officers on a specific date.
  
-### 2. Monitor Beat Activity 
+### 3. Monitor Beat Activity 
         
-### 3. Verify Officer 
+### 4. Verify Officer 
 - This feature enables the admin to verify the users, who have recently registered. 
 - This will ensure that no illegitimate registration takes place.
 
-### 4. View Zones
+### 5. View Zones
 - This provision enables the admin to add or remove red, blue or yellow regions.
 - Red region represents Poaching activities, while yellow regions represents illicit tree cutting. The blue region represents encroachment.
 
-### 5. View Activity on Map
+### 6. View Activity on Map
 - The admin can view the reports which depict the illegal tree cutting, poaching activities.  
   
-### 6. Generate OR code
+### 7. Generate OR code
 - This feature enables the admin to create various types of QR codes which will be later used by the officers for marking attendance and checkpoints.
 - This feature is unique to admin.
 
-### 7. News broadcasting
+### 8. News broadcasting
 - The admin decides the news which need to be broadcasted to all the officers considering the severity of the case.
 - The admin can add or delete posts which are broadcasted to all the officers.
